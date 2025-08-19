@@ -49,7 +49,7 @@ body {
 .container {
   max-width: 900px;
   margin: 20px auto;
-  padding: 25px;
+  padding: 15px;
   background-color: #343434;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
@@ -78,4 +78,109 @@ footer {
   left: 0;
   z-index: -1;
 }
+.side-by-side {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.side-img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+.side-text {
+  flex: 1;
+}
+@media (max-width: 600px) {
+  .side-by-side {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .side-img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 
+.profile-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-card {
+  width: 180px;
+  border: 2px solid #222;
+  border-radius: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #111;
+  color: #eee;
+  position: relative;
+  z-index: 1;
+  transition: border-color 0.3s ease;
+}
+
+.profile-card:hover,
+.profile-card:focus-within {
+  border-color: #0af;
+  z-index: 10;
+}
+
+.face-shot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+.profile-name {
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 1.1rem;
+  user-select: none;
+  color: #0af;
+}
+
+.expanded-panel {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0, 170, 255, 0.4);
+  color: #ddd;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  margin-left: 12px;
+  z-index: 20;
+}
+
+.expanded-panel p {
+  margin-top: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.profile-card:hover .expanded-panel,
+.profile-card:focus-within .expanded-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.profile-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
