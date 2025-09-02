@@ -47,8 +47,10 @@
       <source src="audio/lostone.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/tsparticles.bundle.min.js"></script>
     <script>
         tsParticles.load("tsparticles", {
+            background: { color: { value: "#000" } },
             particles: {
                 number: { value: 50 },
                 shape: { type: "circle" },
@@ -56,11 +58,9 @@
                 move: { enable: true, speed: 1 },
                 color: { value: "#fff" },
                 opacity: { value: 0.7 }
-            },
-            background: {
-                color: "#000000"
             }
         });
-    </script>
+        </script>
+        
   </body>
 </html>
