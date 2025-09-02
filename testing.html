@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test tsParticles</title>
+  <style>
+    #tsparticles {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      particles: {
+        number: { value: 50 },
+        shape: { type: "circle" },
+        size: { value: 3 },
+        move: { enable: true, speed: 1 },
+        color: { value: "#ffffff" },
+        opacity: { value: 0.7 }
+      }
+    });
+  </script>
+</body>
+</html>
