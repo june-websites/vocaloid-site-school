@@ -6,24 +6,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="tsparticles">
-   <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/tsparticles.bundle.min.js"></script>
-<script>
-  tsParticles.load("tsparticles", {
-    particles: {
-      number: { value: 50 },
-      shape: { type: "circle" },
-      size: { value: 3 },
-      move: { enable: true, speed: 1 },
-      color: { value: "#fff" },
-      opacity: { value: 0.7 }
-    },
-    background: {
-      color: { value: "#000" }
-    }
-  });
-</script>
-
+  <div id="tsparticles"></div>
   <nav class="topbar">
       <div class="nav-container">
           <a href="index.html">Home</a>
@@ -63,9 +46,25 @@
       <source src="audio/lostone.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
-    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    background: { color: { value: "#000" } },
+    particles: {
+      number: { value: 50 },
+      shape: { type: "circle" },
+      size: { value: 3 },
+      move: { enable: true, speed: 1 },
+      color: { value: "#fff" },
+      opacity: { value: 0.7 }
+    }
+  });
+</script>
+
   </body>
 </html>
+
 
 
 
