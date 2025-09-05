@@ -51,7 +51,7 @@ body {
   max-width: 900px;
   margin: 20px auto;
   padding: 15px;
-  background-color: #343434;
+  background-color: #121212;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   border: 1px solid #2a2a2a;
@@ -211,6 +211,7 @@ footer {
   background-color: #000;
   pointer-events: none;  
 }
+
 
 
 
