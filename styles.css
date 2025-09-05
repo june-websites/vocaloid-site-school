@@ -201,7 +201,7 @@ footer {
   width: 100%;
 }
 
-#tsparticles {
+#particles-js {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -209,8 +209,10 @@ footer {
   left: 0;
   z-index: -1;
   background-color: #000;
-  pointer-events: none;
+  pointer-events: none;  
 }
+
+
 
 
 
