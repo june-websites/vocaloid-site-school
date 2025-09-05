@@ -208,7 +208,8 @@ footer {
   top: 0;
   left: 0;
   z-index: -1;
-  background: #000;
+  background-color: #000;
+  pointer-events: none;
 }
 
 
